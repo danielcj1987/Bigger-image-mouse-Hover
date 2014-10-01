@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 BIGGER IMAGE MOUSE HOVER</title>
+</head>
+
+<style type="text/css">
+	.zoom{
+		display:block!important;
+		-webkit-transition:-webkit-transform 1s ease-out;
+		-moz-transition:-moz-transform 1s ease-out;
+		-o-transition:-o-transform 1s ease-out;
+		-ms-transition:-ms-transform 1s ease-out;
+		transition:transform 1s ease-out;
+	}
+
+	.zoom:hover{
+		cursor: pointer;
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+</style>
+
+<body>
+	<img class="zoom" src="blog.png" align="center" width="50px" />
+	<img class="zoom" src="twitter.jpg" align="center" width="50px" />
+</body>
+</html>
